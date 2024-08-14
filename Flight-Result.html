@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="Assets/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/CSS/slick.css" rel="stylesheet">
+    <link href="Assets/CSS/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" type="text/css"> 
+
+    <link href="Assets/CSS/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <link href="Assets/CSS/main.css" rel="stylesheet">
+</head>
+    <body>
+     <!-- ===============start header================ -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+              <a class="navbar-brand" href="javascript:void(0)">Your Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Flights</a>
+                  </li>
+                  <li class="nav-item mr-50">
+                    <a class="nav-link" href="javascript:void(0)">Hotels</a>
+                  </li>
+                  
+                </ul>
+                
+                 <a class="text-center" href="#" style="text-decoration:none;">
+                    <span style="display:block;font-size:12px;color:#c20000;">Call Us</span><span> + 000-1234-000</span></a>
+              </div>
+            </div>
+          </nav>
+        <!-- =============== end header================ -->
+        
+    <!-- modify search -->
+      <div class="icon-sec">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12">
+              <div class="iconbox">
+                <a href="#" class="fa-solid fa-filter" id="Filter"></a>
+                <a href="#" class="fa-solid fa-pen-to-square" id="Edit"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="modify-sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="modify-box">
+                  <div class="dest-search">
+                    <div class="mod-dest">
+                      <i class="fa-solid fa-plane"></i>
+                      <input type="text" class="form-control" placeholder="Flying from" value="New Delhi and NCR (DEL)">
+                    </div>
+                    <div class="mod-dest">
+                      <i class="fa-solid fa-plane"></i>
+                      <input type="text" class="form-control" placeholder="Flying from" value="New Delhi and NCR (DEL)">
+                    </div>
+                  </div>
+
+                  <div class="dest-calender">
+                    <div class="cale depart-cal">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <input type="text" class="form-control" value="Thu, 9 May" >
+                    </div>
+                    <div class="cale return-cal d-none">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <input type="text" class="form-control" value="Thu, 9 May">
+                      <a href="#" class="fa-solid fa-circle-xmark" id="closeCal"></a>                    </div>
+                    <div class="cale add-return">
+                      <a href="#">Add return</a>                    </div>
+                  </div>
+
+                  <div class="modfy-traveler-box">
+                    <div class="mod-traveler-details">
+                      <a href="#" id="resultTravelers">
+                        <i class="fa-solid fa-user"></i>
+                        <span>1</span>  
+                        <i class="fa-solid fa-chevron-down drop-icon"></i>
+                      </a>
+                      <div class="trav_form result-trav arrow-box d-none" id="RTravelers">
+                        <div class="traveler-box">
+                         <div class="hoteltrav-itme">
+                          <div class="traveltitle">
+                           <p class="mb-0">Adult</p> 
+                            <span>(12 years and above)</span>
+                          </div>
+                          <div class="add-remov">
+                            <a href="#" class="fa-solid fa-minus minus"></a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="fa-solid fa-plus active"></a>
+                          </div>
+                         </div>
+                         <div class="hoteltrav-itme">
+                          <div class="traveltitle">
+                           <p class="mb-0">Child</p> 
+                            <span>(2-11 years)</span>
+                          </div>
+                          <div class="add-remov">
+                            <a href="#" class="fa-solid fa-minus minus"></a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="fa-solid fa-plus active"></a>
+                          </div>
+                         </div>
+                         <div class="hoteltrav-itme">
+                          <div class="traveltitle">
+                           <p class="mb-0">Infants</p> 
+                            <span>(Less than 2 years)</span>
+                          </div>
+                          <div class="add-remov">
+                            <a href="#" class="fa-solid fa-minus minus"></a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="fa-solid fa-plus active"></a>
+                          </div>
+                         </div>
+
+                         <a href="#" class="btn btn-outline-dark py-1 my-3">Done</a>
+
+                         
+                        
+                        </div>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="modfy-class-box">
+                    <div class="dropdown">
+                      <a class="btn bg-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Economy
+                      </a>
+                    
+                      <ul class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-check"></i> <span>Economy</span> </a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i> <span>Premium economy</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i> <span>Business</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i> <span>Frist</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="modyfy-btn-box">
+                    <button type="button" class="btn btn-primary">Modify Search</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    <!-- modify search -->
+
+    <section class="result-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3" id="filterBox">
+            <div class="filter-sec">
+              <div class="fil-box">
+                <div class="fil-head">
+                  <p>Airlines</p>
+                </div>
+                <div class="select-all-air">
+                  <p>Select all airlines</p>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                  </div>
+                </div>
+                <div class="airline-box filtet-check my-3 pb-3 border-b">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airCheck01">
+                    <label class="form-check-label" for="airCheck01">
+                      Air Arabia
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airCheck02">
+                    <label class="form-check-label" for="airCheck02">
+                      Air Astana
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airCheck03">
+                    <label class="form-check-label" for="airCheck03">
+                      Air India
+                    </label>
+                  </div>
+                  <div class="all-air d-none" id="moreAir">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="airCheck04">
+                      <label class="form-check-label" for="airCheck04">
+                        Air Astana
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="airCheck05">
+                      <label class="form-check-label" for="airCheck05">
+                        Air Astana
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="airCheck06">
+                      <label class="form-check-label" for="airCheck06">
+                        Air Astana
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="airCheck07">
+                      <label class="form-check-label" for="airCheck07">
+                        Air Astana
+                      </label>
+                    </div>
+                  </div>
+
+                  <a href="#" class="d-block" id="more"><i class="fa-solid fa-chevron-down drop-icon"></i>
+                    Show all airline</a>
+                  <a href="#" class="d-none" id="less"><i class="fa-solid fa-chevron-up drop-icon"></i>
+                    Show less</a>
+                </div>
+
+                
+                <div class="stop-air filtet-check my-3 pb-3 border-b">
+                  <div class="fil-head my-2">
+                    <p class="mb-0">Stops</p>
+                    <a href="#" class="text-decoration-none">
+                      Clear
+                    </a>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airStopD">
+                    <label class="form-check-label" for="airStopD">
+                      Direct
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airStop1">
+                    <label class="form-check-label" for="airStop1">
+                      1 Stop
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="airStopM">
+                    <label class="form-check-label" for="airStopM">
+                      2 Stops+
+                    </label>
+                  </div>
+                </div>
+                
+              <!--    <div class="air-times my-3 pb-3 border-b">
+                <div class="fil-head my-2">
+                    <p class="mb-0">Times</p>
+                    <a href="#" class="text-decoration-none">
+                      Clear
+                    </a>
+                  </div>
+                  <div class="slider-labels">
+                    <div class="caption">
+                      <strong>Min:</strong> <span id="price-slider-range-value1"></span>
+                    </div>
+                    <div class="text-right caption">
+                      <strong>Max:</strong> <span id="price-slider-range-value2"></span>
+                    </div>
+                </div>
+
+                </div>-->  
+                <!--<div class="air-price my-3 pb-3 border-b">
+                  <div class="fil-head my-2">
+                    <p class="mb-0">Price per person</p>
+                    <a href="#" class="text-decoration-none">
+                      Clear
+                    </a>
+                  </div>
+
+                  <div class="range">
+                    <label for="customRange3" class="form-label fst-normal">Up to $ <span id="price">0</span></label>
+                    <input type="range" class="form-range" min="0" max="5" step="1" id="priceRange">
+                  </div>
+                </div>-->
+                
+                <!--<div class="air-duration my-3 pb-3 border-b">
+                  <div class="fil-head my-2">
+                    <p class="mb-0">Duration</p>
+                    <a href="#" class="text-decoration-none">
+                      Clear
+                    </a>
+                  </div>
+
+                  <div class="range">
+                    <label for="customRange3" class="form-label fst-normal">Under <span id="duration">0</span> hours</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="durationRange">
+                  </div>
+
+                </div>-->
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="row row-col-lg-5">
+              <div class="col-12">
+                <div class="result-date">
+                  <div class="result-date-box">
+                    <p>12 May - 13 May</p>
+                    <span>See Prices</span>
+                  </div>
+                  <div class="result-date-box">
+                    <p>12 May - 13 May</p>
+                    <span>See Prices</span>
+                  </div>
+                  <div class="result-date-box active">
+                    <p>12 May - 13 May</p>
+                    <span>See Prices</span>
+                  </div>
+                  <div class="result-date-box">
+                    <p>12 May - 13 May</p>
+                    <span>See Prices</span>
+                  </div>
+                  <div class="result-date-box">
+                    <p>12 May - 13 May</p>
+                    <span>See Prices</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="result-heading">
+                <h1>Select outbound flight to Dubai</h1>
+                <p>Average round trip price per passenger. The price includes taxes and fees.</p>
+              </div>
+            </div>
+
+            <div class="row d-none d-lg-block">
+              <div class="col-lg-12">
+                <div class="short-group-btn">
+                  <ul class="short-ul">
+                    <li>
+                      <a href="#" class="active">
+                          <span>Cheapest</span>
+                          <span>$ 245</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Best overall</span>
+                        <span>$ 2498</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Fastest</span>
+                        <span>$ 2478</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sort by
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span>Fastest</span>
+                          <span>Fastest first</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span>Departure time</span>
+                          <span>Earliest first</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span>Arrival time</span>
+                          <span>Earliest first</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span>Stops</span>
+                          <span>Fewest stops first</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- repeat Result -->
+              <div class="col-lg-12 mb-3">
+                <div class="result-combo">
+                  <div class="air-result-box" id="resultBoxOne">
+                    <div class="air-result-group-tow">
+                      <div class="air-logo">
+                        <img width="48px" height="48px" src="Assets/Images/result-icon/SG_v2.png">
+                      </div>
+                      <div class="air-name">
+                        <p class="mb-0">Air Arabia</p>
+                        <span>Cheapest</span>
+                      </div>
+                    </div>
+                    
+                    <div class="airline-details">
+                      <div class="air-time">
+                        <div class="depart-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                        <div class="line">
+                          <div class="">
+                            <div class="air-line">
+                          <p class=""></p>
+                            </div>
+                            <span class="air-stop">1</span>
+                          </div>
+                          <span class="deu-time">13h 55m</span>
+                        </div>
+                        <div class="arrival-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                      </div>
+                      <div class="air-result-price">
+                        <div class="air-price-box">
+                          <p class="old-price">
+                            <span>
+                              $ 24,994
+                            </span>
+                          </p>
+                          <p class="new-price">
+                            <span>$</span>
+                            <span>24,982</span>
+                          </p>
+                        </div>
+                        <!-- <div class="result-btn-box px-2">
+                          <a href="#" class="btn btn-primary py-1">Select</a>
+                        </div> -->
+                        
+
+                        <div class="arrow-box">
+                          <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down drop-icon" id="one"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="fh-detail-expend" id="fhDetailExpendOne">
+                    <div class="depart-arrivel-box">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="layover-box">
+                       <div class="" style="width: 10%; min-width: 10%;"></div>
+                       <div class="layover">
+                        <p class="lay-time">8h 15m layover</p>
+                        <p class="lay-dot">•</p>
+                        <p class="lay-time">Pune (PNQ)</p>
+                       </div>
+                    </div>
+
+                    <div class="depart-arrivel-box pt-0">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 result-btn-box">
+                        <a href="#" class="btn btn-primary py-1">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- repeat Result -->
+              <!-- repeat Result -->
+              <div class="col-lg-12 mb-3">
+                <div class="result-combo">
+                  <div class="air-result-box" id="resultBoxtwo">
+                    <div class="air-result-group-tow">
+                      <div class="air-logo">
+                        <img width="48px" height="48px" src="Assets/Images/result-icon/SG_v2.png">
+                      </div>
+                      <div class="air-name">
+                        <p class="mb-0">Air Arabia</p>
+                      </div>
+                    </div>
+
+                    
+                    <div class="airline-details">
+                      <div class="air-time">
+                        <div class="depart-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                        <div class="line">
+                          <div class="">
+                            <div class="air-line">
+                             <p class=""></p>
+                            </div>
+                            <span class="air-stop">1</span>
+                          </div>
+                          <span class="deu-time">13h 55m</span>
+                        </div>
+                        <div class="arrival-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                      </div>
+                      <div class="air-result-price">
+                        <div class="air-price-box">
+                          <p class="old-price">
+                            <span>
+                              $ 24,99
+                            </span>
+                          </p>
+                          <p class="new-price">
+                            <span>$</span>
+                            <span>24,92</span>
+                          </p>
+                        </div>
+                        <div class="arrow-box">
+                          <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down drop-icon" id="two"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="fh-detail-expend" id="fhDetailExpendtwo">
+                    <div class="depart-arrivel-box">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="layover-box">
+                       <div class="" style="width: 10%; min-width: 10%;"></div>
+                       <div class="layover">
+                        <p class="lay-time">8h 15m layover</p>
+                        <p class="lay-dot">•</p>
+                        <p class="lay-time">Pune (PNQ)</p>
+                       </div>
+                    </div>
+
+                    <div class="depart-arrivel-box pt-0">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 result-btn-box">
+                        <a href="#" class="btn btn-primary py-1">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repeat Result -->
+              <!-- repeat Result -->
+              <div class="col-lg-12 mb-3">
+                <div class="result-combo">
+                  <div class="air-result-box" id="resultBoxthree">
+                    <div class="air-result-group-tow">
+                      <div class="air-logo">
+                        <img width="48px" height="48px" src="Assets/Images/result-icon/SG_v2.png">
+                      </div>
+                      <div class="air-name">
+                        <p class="mb-0">Air Arabia</p>
+                        <span>Cheapest</span>
+                      </div>
+                    </div>
+
+                    
+                    <div class="airline-details">
+                      <div class="air-time">
+                        <div class="depart-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                        <div class="line">
+                          <div class="">
+                            <div class="air-line">
+ <p class=""></p>                            </div>
+                            <span class="air-stop">1</span>
+                          </div>
+                          <span class="deu-time">13h 55m</span>
+                        </div>
+                        <div class="arrival-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                      </div>
+                      <div class="air-result-price">
+                        <div class="air-price-box">
+                          <p class="old-price">
+                            <span>
+                              $ 24,994
+                            </span>
+                          </p>
+                          <p class="new-price">
+                            <span>$</span>
+                            <span>24,982</span>
+                          </p>
+                        </div>
+                        <div class="arrow-box">
+                          <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down drop-icon" id="three"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="fh-detail-expend" id="fhDetailExpendthree">
+                    <div class="depart-arrivel-box">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="layover-box">
+                       <div class="" style="width: 10%; min-width: 10%;"></div>
+                       <div class="layover">
+                        <p class="lay-time">8h 15m layover</p>
+                        <p class="lay-dot">•</p>
+                        <p class="lay-time">Pune (PNQ)</p>
+                       </div>
+                    </div>
+
+                    <div class="depart-arrivel-box pt-0">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 result-btn-box">
+                        <a href="#" class="btn btn-primary py-1">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repeat Result -->
+              <!-- repeat Result -->
+              <div class="col-lg-12 mb-3">
+                <div class="result-combo">
+                  <div class="air-result-box" id="resultBoxfour">
+                    <div class="air-result-group-tow">
+                      <div class="air-logo">
+                        <img width="48px" height="48px" src="Assets/Images/result-icon/SG_v2.png">
+                      </div>
+                      <div class="air-name">
+                        <p class="mb-0">Air Arabia</p>
+                        <span>Cheapest</span>
+                      </div>
+                    </div>
+
+                    
+                    <div class="airline-details">
+                      <div class="air-time">
+                        <div class="depart-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                        <div class="line">
+                          <div class="">
+                            <div class="air-line">
+                             <p></p>
+                            </div>
+                            <span class="air-stop">1</span>
+                          </div>
+                          <span class="deu-time">13h 55m</span>
+                        </div>
+                        <div class="arrival-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                      </div>
+                      <div class="air-result-price">
+                        <div class="air-price-box">
+                          <p class="old-price">
+                            <span>
+                              $ 24,994
+                            </span>
+                          </p>
+                          <p class="new-price">
+                            <span>$</span>
+                            <span>24,982</span>
+                          </p>
+                        </div>
+                        <div class="arrow-box">
+                          <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down drop-icon" id="four"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="fh-detail-expend" id="fhDetailExpendfour">
+                    <div class="depart-arrivel-box">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="layover-box">
+                       <div class="" style="width: 10%; min-width: 10%;"></div>
+                       <div class="layover">
+                        <p class="lay-time">8h 15m layover</p>
+                        <p class="lay-dot">•</p>
+                        <p class="lay-time">Pune (PNQ)</p>
+                       </div>
+                    </div>
+
+                    <div class="depart-arrivel-box pt-0">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 result-btn-box">
+                        <a href="#" class="btn btn-primary py-1">Select</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- repeat Result -->
+              <!-- repeat Result -->
+              <div class="col-lg-12 mb-3">
+                <div class="result-combo">
+                  <div class="air-result-box" id="resultBoxfive">
+                    <div class="air-result-group-tow">
+                      <div class="air-logo">
+                        <img width="48px" height="48px" src="Assets/Images/result-icon/SG_v2.png">
+                      </div>
+                      <div class="air-name">
+                        <p class="mb-0">Air Arabia</p>
+                        <span>Cheapest</span>
+                      </div>
+                    </div>
+
+                    
+                    <div class="airline-details">
+                      <div class="air-time">
+                        <div class="depart-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                        <div class="line">
+                          <div class="">
+                            <div class="air-line">
+                            <p></p>
+                            </div>
+                            <span class="air-stop">1</span>
+                          </div>
+                          <span class="deu-time">13h 55m</span>
+                        </div>
+                        <div class="arrival-time time-box">
+                          <p>04:40</p>
+                          <span>DEL</span>
+                        </div>
+                      </div>
+                      <div class="air-result-price">
+                        <div class="air-price-box">
+                          <p class="old-price">
+                            <span>
+                              $ 24,994
+                            </span>
+                          </p>
+                          <p class="new-price">
+                            <span>$</span>
+                            <span>24,982</span>
+                          </p>
+                        </div>
+                        <div class="arrow-box">
+                          <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down drop-icon" id="five"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="fh-detail-expend" id="fhDetailExpendfive">
+                    <div class="depart-arrivel-box">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="layover-box">
+                       <div class="" style="width: 10%; min-width: 10%;"></div>
+                       <div class="layover">
+                        <p class="lay-time">8h 15m layover</p>
+                        <p class="lay-dot">•</p>
+                        <p class="lay-time">Pune (PNQ)</p>
+                       </div>
+                    </div>
+
+                    <div class="depart-arrivel-box pt-0">
+                      <div class="group-three airline-group">
+                        <div class="result-time-box">
+                          <div class="result-time">
+                            <p class="mb-0">09:35</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                          <p class="mb-0 py-3">2h 10m</p>
+                          <div class="result-time">
+                            <p class="mb-0">11:45</p>
+                            <p class="mb-0">14 May</p>
+                          </div>
+                        </div>
+    
+                        <div class="result-dot-icon">
+                          <i class="fa-regular fa-circle-dot"></i>
+                          <div class="line"></div>
+                          <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+    
+                        <div class="result-airline-box">
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                          <div class="fh-name">
+                            <div class="air-logo">
+                              <img src="Assets/Images/result-icon/SG_v2.png" width="20px" height="20px">
+                              <p class="mb-0">SpiceJet</p>
+                            </div>
+                            <p class="fly-class">Economy Class • SG 8157 • Boeing 737</p>
+                          </div>
+                          <div class="airport-name">
+                            <p class="mb-0">New Delhi and NCR (DEL) <span class="sc-AxirZ sc-AxiKw kQcbJW">• </span></p>
+                            <p class="mb-0">Indira Gandhi International Airport</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="result-facility">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-plane"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>32Q Narrowbody jet</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 result-btn-box">
+                        <a href="#" class="btn btn-primary py-1">Select</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- repeat Result -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+       <footer class="py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <a class="f-logo text-white" href="javascript:void(0)">Your Logo</a>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-md-3">
+                <h3>Company</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      About
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      List your property
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Partnerships
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Newsroom</a>
+                  </li>
+                
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3>Explore</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      Hotels in United states
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Domestic Flights
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                     Car Rental
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Vacation packages</a>
+                  </li>
+                   <li class="list-group-item">
+                    <a href="#">Travel Blog</a>
+                  </li>
+                
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3>Policies</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Accessibility
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Your Privacy Choices</a>
+                  </li>
+                
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3>Help</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      Support
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Cancel your hotel
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      Cancel your flight
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Refund Timelines policies</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 text-center border-top">
+                <p class="pb-0 pt-3 text-white fw-normal">Copyright © 2024</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    <script type="text/javascript" src="Assets/JS/jquery-1.11.1.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="Assets/JS/popper.min.js"></script>
+    <script src="Assets/JS/bootstrap.min.js"></script>
+    <script src="Assets/JS/gijgo.min.js" type="text/javascript"></script> 
+    <script src="Assets/JS/slick.min.js"></script>
+
+    <script>
+      $("#more").click(function(){
+        $("#moreAir").addClass("d-block");
+        $("#more").addClass("d-none");
+        $("#moreAir").removeClass("d-none");
+        $("#moreAir").removeClass("d-block");
+        $("#less").removeClass("d-none");
+        $("#less").addClass("d-block");
+      });
+      $("#less").click(function(){
+        $("#moreAir").addClass("d-none");
+        $("#moreAir").removeClass("d-block");
+        $("#more").removeClass("d-none");
+        $("#more").addClass("d-block");
+        $("#less").removeClass("d-block");
+        $("#less").addClass("d-none");
+      });
+    </script>
+    <script>
+      var slider = document.getElementById("priceRange");
+var priceoutput = document.getElementById("price");
+priceoutput.innerHTML = slider.value; 
+
+slider.oninput = function() {
+    priceoutput.innerHTML = this.value;
+}
+      var slider = document.getElementById("durationRange");
+var durationoutput = document.getElementById("duration");
+durationoutput.innerHTML = slider.value;
+
+slider.oninput = function() {
+    durationoutput.innerHTML = this.value;
+}
+    </script>
+
+<script>
+  var lowerSlider = document.querySelector('#lower'),
+   upperSlider = document.querySelector('#upper'),
+   lowerVal = parseInt(lowerSlider.value);
+   upperVal = parseInt(upperSlider.value);
+
+upperSlider.oninput = function() {
+   lowerVal = parseInt(lowerSlider.value);
+   upperVal = parseInt(upperSlider.value);
+   
+   if (upperVal < lowerVal + 4) {
+      lowerSlider.value = upperVal - 4;
+      
+      if (lowerVal == lowerSlider.min) {
+         upperSlider.value = 4;
+      }
+   }
+};
+
+
+lowerSlider.oninput = function() {
+   lowerVal = parseInt(lowerSlider.value);
+   upperVal = parseInt(upperSlider.value);
+   
+   if (lowerVal > upperVal - 4) {
+      upperSlider.value = lowerVal + 4;
+      
+      if (upperVal == upperSlider.max) {
+         lowerSlider.value = parseInt(upperSlider.max) - 4;
+      }
+
+   }
+};
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#resultTravelers").click(function(){
+    $("#RTravelers").toggleClass('d-block');
+    $("#RTravelers").toggleClass('d-none');
+  });
+  $(".modfy-class-box").click(function(){
+       $("#RTravelers").addClass('d-none');
+  });
+  $(".add-return").click(function(){
+       $(".return-cal").toggleClass('d-none');
+  });
+  $(".add-return").click(function(){
+       $(".return-cal").removeClass('d-none');
+      
+       $(".add-return").addClass('d-none');
+  });
+  $("#closeCal").click(function(){
+       $(".return-cal").addClass('d-none');
+      
+       $(".add-return").removeClass('d-none');
+  });
+  $("#Edit").click(function(){
+       $(".modify-sec").toggleClass('d-block');
+       $("#filterBox").removeClass('d-block');  
+  });
+  $("#Filter").click(function(){
+       $("#filterBox").toggleClass('d-block');
+       $(".modify-sec").removeClass('d-block');  
+  });
+  $("#resultBoxOne").click(function(){
+       $("#fhDetailExpendOne").toggleClass('d-block');
+       $("#one").toggleClass('rotate180');
+  });
+  $("#resultBoxtwo").click(function(){
+       $("#fhDetailExpendtwo").toggleClass('d-block');
+       $("#two").toggleClass('rotate180');
+  });
+  $("#resultBoxthree").click(function(){
+       $("#fhDetailExpendthree").toggleClass('d-block');
+       $("#three").toggleClass('rotate180');
+  });
+  $("#resultBoxfour").click(function(){
+       $("#fhDetailExpendfour").toggleClass('d-block');
+       $("#four").toggleClass('rotate180');
+  });
+  $("#resultBoxfive").click(function(){
+       $("#fhDetailExpendfive").toggleClass('d-block');
+       $("#five").toggleClass('rotate180');
+  });
+});
+</script>
+    </body>
+</html>
